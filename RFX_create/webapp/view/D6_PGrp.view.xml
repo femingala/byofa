@@ -1,0 +1,19 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.D6_PGrp" xmlns:m="sap.m">
+    <m:Dialog id="sap_m_Dialog_0" title="Purchasing Group" horizontalScrolling="true" showHeader="true" state="None" stretch="false" type="Standard" verticalScrolling="true" afterClose="_onDialogAfterClose">
+        <m:content>
+           			<m:List items="{/VHpurGroupSet}" includeItemInSelection="true">
+				<m:items>
+					<m:StandardListItem id="sap_m_Dialog_0-content-sap_m_StandardListItem-1480602430030" title="{PurchGrpText}" description="{PurchOrgText}" info="{PurchGrp}"
+					 type="Active" selected="false" press="onSelect"/>
+				</m:items>
+			</m:List>
+        </m:content>
+        <m:beginButton/>
+        <m:buttons>
+            <m:Button id="sap_m_Dialog_0-buttons-sap_m_Button-2" iconDensityAware="false" text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" press="onClose"/>
+        </m:buttons>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:subHeader/>
+    </m:Dialog>
+</mvc:View>

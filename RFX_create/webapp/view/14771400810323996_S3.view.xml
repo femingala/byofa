@@ -1,0 +1,531 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form"
+	controllerName="generated.app.controller.14771400810323996_S3">
+	<!--<FlexBox alignItems="Start" justifyContent="Center" alignContent="Inherit">-->
+	<!--<ComboBox id="Type" value="" placeholder="RFx Type" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%"-->
+	<!--selectionChange = "onTypeChange">-->
+	<!--	<items>-->
+	<!--		<core:Item id="TypeBid" text="BIDx" enabled="true"/>-->
+	<!--		<core:Item id="TypeRFI" text="RFI" enabled="true"/>-->
+	<!--		<core:Item id="TypeRFc" text="RFCR" enabled="true"/>-->
+	<!--	</items>-->
+	<!--</ComboBox>-->
+	<!--</FlexBox>-->
+	<!-- sap.ui.core.Control -->
+	<Page showFooter="true" floatingFooter="true">
+		<uxap:ObjectPageLayout id="sap_uxap_ObjectPageLayout_0" showTitleInHeaderContent="false" showHeaderContent="true" showAnchorBar="true"
+			subSectionLayout="TitleOnTop" visibility="false" showFooter="true">
+			<uxap:headerContent/>
+			<uxap:headerTitle>
+				<uxap:ObjectPageHeader id="rfxNumber" objectImageURI="sap-icon://document" objectTitle="Create RFx" objectSubtitle="" headerDesign="Dark"
+					objectImageShape="Square" isObjectIconAlwaysVisible="true" isObjectTitleAlwaysVisible="true" isObjectSubtitleAlwaysVisible="false"
+					isActionAreaAlwaysVisible="false">
+					<uxap:actions/>
+					<uxap:breadCrumbsLinks/>
+				</uxap:ObjectPageHeader>
+			</uxap:headerTitle>
+			<uxap:sections>
+				<!--            Header                -->
+				<uxap:ObjectPageSection id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1" showTitle="true" title=""
+					titleUppercase="true" visible="true">
+					<uxap:subSections>
+						<uxap:ObjectPageSubSection id="RfxDetailsSection" title="RFx Details" mode="Expanded">
+							<uxap:blocks>
+								<form:Form id="headForm" visible="true">
+									<form:formContainers>
+										<form:FormContainer id="headForm-formContainers-sap_ui_layout_form_FormContainer-1" visible="true">
+											<form:formElements>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1"
+													visible="true">
+													<form:fields>
+														<DatePicker id="submissionDeadline" displayFormat="MMM dd, yyyy" enabled="true" visible="true"/>
+													</form:fields>
+													<form:label>
+														<Label id="sap_uxap_ObjectPageLayout_0-headerContent-sap_m_Label-1480145655316" text="Submission Deadline" required="true"
+															textAlign="Initial" textDirection="Inherit"/>
+													</form:label>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-3"
+													visible="true">
+													<form:fields>
+														<Input id="Currency" placeholder="USD" type="Text" showValueHelp="true" valueHelpRequest="currencyValueHelp" enabled="true" visible="true"
+															width="191px" valueHelpOnly="true" maxLength="0"/>
+													</form:fields>
+													<form:label>
+														<Label id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-3-label-sap_m_Label-1"
+															text="Currency" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+													</form:label>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480148413117"
+													visible="true">
+													<form:fields>
+														<Input id="pOrg" placeholder="Local Purchasing Organization 1" type="Text" description="" showValueHelp="true" enabled="true" visible="true"
+															width="auto" valueHelpOnly="true" valueHelpRequest="purchasingOrgValueHelp" maxLength="0"/>
+													</form:fields>
+													<form:label>
+														<Label
+															id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480148413117-label-sap_m_Label-1"
+															text="Purchasing Organization" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+													</form:label>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480148415380"
+													visible="true">
+													<form:fields>
+														<Input id="pGrp" placeholder="Local Purchasing Group 14 (WF11)" type="Text" showValueHelp="true" enabled="true" visible="true" width="auto"
+															valueHelpOnly="true" valueHelpRequest="purchasingGrpValueHelp" maxLength="0"/>
+													</form:fields>
+													<form:label>
+														<Label
+															id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480148415380-label-sap_m_Label-1"
+															text="Purchasing Group" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+													</form:label>
+												</form:FormElement>
+												<form:FormElement>
+													<form:label>
+														<Label id="sap_uxap_ObjectPageLayout_0-headerContent-sap_m_Label-1480145771432" text="Follow-on Document" required="false"
+															textAlign="Center" textDirection="Inherit"/>
+													</form:label>
+													<form:fields>
+														<ComboBox id="followOnDoc" value="Purchase Order" editable="true" enabled="true" visible="true" valueState="None">
+															<items>
+																<core:Item id="folItem-1" Key="PO" text="Purchase Order" enabled="true"/>
+																<core:Item id="folItem-2" Key="CTR" text="Contract" enabled="true"/>
+																<core:Item id="folItem-3" Key="Both" text="Purchase Order or Contract" enabled="true"/>
+															</items>
+														</ComboBox>
+													</form:fields>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-2"
+													visible="true">
+													<form:fields>
+														<RadioButton id="pulicRfx" selected="true" text="Public" editable="true" enabled="true" visible="true" valueState="None"/>
+														<RadioButton id="pvtRfx" selected="false" text="Private" editable="true" enabled="true" visible="true" width="auto" valueState="None"/>
+													</form:fields>
+													<form:label>
+														<Label id="headForm-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-2-label-sap_m_Label-1"
+															text="Publication Type" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+													</form:label>
+												</form:FormElement>
+											</form:formElements>
+										</form:FormContainer>
+										<form:FormContainer id="headForm-formContainers-sap_ui_layout_form_FormContainer-1480147702893" visible="true">
+											<form:formElements>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1480147702893-formElements-sap_ui_layout_form_FormElement-1"
+													visible="true">
+													<form:fields>
+														<CheckBox id="chnageResponseCB" text="Bidder Can Change RFx Responses" selected="false" editable="true" enabled="true" visible="true"
+															width="auto" textDirection="Inherit"/>
+													</form:fields>
+													<form:label/>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1480147702893-formElements-sap_ui_layout_form_FormElement-2"
+													visible="true">
+													<form:fields>
+														<CheckBox id="multipleCB" text="Allow Multiple RFx Responses for Each Company" selected="false" editable="true" enabled="true"
+															visible="true" width="auto" textDirection="Inherit"/>
+													</form:fields>
+													<form:label/>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1480147702893-formElements-sap_ui_layout_form_FormElement-3"
+													visible="true">
+													<form:fields>
+														<CheckBox id="weightingCB" text="Display Weighting to Bidders:" selected="false" editable="true" enabled="true" visible="true" width="auto"
+															textDirection="Inherit"/>
+													</form:fields>
+													<form:label/>
+												</form:FormElement>
+												<form:FormElement id="headForm-formContainers-sap_ui_layout_form_FormContainer-1480147702893-formElements-sap_ui_layout_form_FormElement-4"
+													visible="true">
+													<form:fields>
+														<CheckBox id="offlineCB" text="Allow Offline Bidding:" selected="false" editable="true" enabled="true" visible="true" width="auto"
+															textDirection="Inherit"/>
+													</form:fields>
+													<form:label/>
+												</form:FormElement>
+											</form:formElements>
+										</form:FormContainer>
+									</form:formContainers>
+									<form:layout>
+										<form:ResponsiveGridLayout id="headForm-layout-sap_ui_layout_form_ResponsiveGridLayout-1" columnsM="1" columnsL="2" emptySpanL="0"
+											emptySpanM="0" emptySpanS="0" visible="true" labelSpanS="12" labelSpanM="3" labelSpanL="4"/>
+									</form:layout>
+									<form:title/>
+								</form:Form>
+							</uxap:blocks>
+							<uxap:moreBlocks/>
+							<uxap:actions/>
+						</uxap:ObjectPageSubSection>
+					</uxap:subSections>
+					<uxap:customAnchorBarButton/>
+				</uxap:ObjectPageSection>
+				<!--             Bidder              -->
+				<uxap:ObjectPageSection id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097" showTitle="true"
+					title="Page Section Title" titleUppercase="true" visible="true">
+					<uxap:subSections>
+						<uxap:ObjectPageSubSection id="bidderDetailsSection" title="Bidders" mode="Expanded">
+							<uxap:blocks>
+								<HBox
+									id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1"
+									displayInline="false" justifyContent="Start" alignItems="Stretch" direction="Column" fitContainer="false" width="" height=""
+									renderType="Div" visible="true">
+									<items>
+										<Toolbar
+											id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-sap_m_Toolbar3-1"
+											width="auto" design="Transparent" height="46px" visible="true" enabled="true">
+											<content>
+												<Text
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-sap_m_Toolbar3-1-content-sap_m_Text-1"
+													text="Bidders(3)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+												<ToolbarSpacer
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-sap_m_Toolbar3-1-content-sap_m_ToolbarSpacer-2"
+													width=""/>
+												<Button
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-sap_m_Toolbar3-1-content-sap_m_Button-3"
+													iconDensityAware="false" text="" type="Transparent" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true"
+													press="_onButtonPress"/>
+											</content>
+											<tooltip/>
+										</Toolbar>
+										<Table
+											id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970"
+											width="auto" noDataText="Click on the + Icon to add Bidder" showSeparators="All" growing="false" growingThreshold="20"
+											growingScrollToLoad="false" mode="Delete">
+											<headerToolbar/>
+											<columns>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-1"
+													width="auto" hAlign="Left" vAlign="Middle" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-1-header-sap_m_Text-1"
+															text="Organization" width="auto" maxLines="2" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-2"
+													width="auto" hAlign="Left" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-2-header-sap_m_Text-1"
+															text="Contact Person" width="auto" maxLines="2" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-3"
+													width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-3-header-sap_m_Text-1"
+															text="OutputMedium" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-4"
+													width="auto" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-columns-build_simple_Column-4-header-sap_m_Text-1"
+															text="Output Medium Value" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+											</columns>
+											<items>
+												<ColumnListItem
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1"
+													type="Active">
+													<cells>
+														<ObjectIdentifier
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_ObjectIdentifier-1"
+															title="1001" text="" titleActive="false" visible="true"/>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_Text-2"
+															text="Amanda(ST Purchaser))" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit"/>
+														<ComboBox
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_ComboBox-3"
+															value="Telephone" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+															<items>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-1"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-2"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-3"
+																	text="Item" enabled="true"/>
+															</items>
+														</ComboBox>
+														<Input
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-1-cells-sap_m_Input-4"
+															value="9867200702" placeholder="TelephoneNumber" type="Number" description="" showValueHelp="false" enabled="true" visible="true"
+															width="auto" valueHelpOnly="false" maxLength="12"/>
+													</cells>
+												</ColumnListItem>
+												<ColumnListItem
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2"
+													type="Active">
+													<cells>
+														<ObjectIdentifier
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_ObjectIdentifier-1"
+															title="70001122" text="" titleActive="false" visible="true"/>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_Text-2"
+															text="John" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+														<ComboBox
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_ComboBox-3"
+															value="Fax" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+															<items>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-1"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-2"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-3"
+																	text="Item" enabled="true"/>
+															</items>
+														</ComboBox>
+														<Input
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-2-cells-sap_m_Input-4"
+															value="1(216) 9118649" placeholder="Fax Number" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+															valueHelpOnly="false" maxLength="0"/>
+													</cells>
+												</ColumnListItem>
+												<ColumnListItem
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3"
+													type="Active">
+													<cells>
+														<ObjectIdentifier
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_ObjectIdentifier-1"
+															title="1000" text="" titleActive="false" visible="true"/>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_Text-2"
+															text="Admin" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+														<ComboBox
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_ComboBox-3"
+															value="Email" placeholder="Email" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+															<items>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-1"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-2"
+																	text="Item" enabled="true"/>
+																<core:Item
+																	id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_ComboBox-3-items-sap_ui_core_Item-3"
+																	text="Item" enabled="true"/>
+															</items>
+														</ComboBox>
+														<Input
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1479378510097-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1-items-build_simple_Table-1480149799970-items-build_simple_Row-3-cells-sap_m_Input-4"
+															value="Admin@sap.com" placeholder="E-Mail" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto"
+															valueHelpOnly="false" maxLength="0"/>
+													</cells>
+												</ColumnListItem>
+											</items>
+										</Table>
+									</items>
+									<layoutData/>
+								</HBox>
+							</uxap:blocks>
+							<uxap:moreBlocks/>
+							<uxap:actions/>
+						</uxap:ObjectPageSubSection>
+					</uxap:subSections>
+					<uxap:customAnchorBarButton/>
+				</uxap:ObjectPageSection>
+				<!--            Items               -->
+				<uxap:ObjectPageSection id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3" showTitle="true" title="Page Section Title"
+					titleUppercase="true" visible="true">
+					<uxap:subSections>
+						<uxap:ObjectPageSubSection id="itemDetailsSection" title="Items" mode="Expanded">
+							<uxap:blocks>
+								<HBox
+									id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901"
+									displayInline="false" justifyContent="Start" alignItems="Stretch" direction="Column" fitContainer="false" width="" height=""
+									renderType="Div" visible="true">
+									<items>
+										<Table
+											id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931"
+											width="auto" noDataText="Click on the + to add Bidder" mode="Delete" showSeparators="All" growing="false" growingThreshold="20"
+											growingScrollToLoad="false">
+											<headerToolbar>
+												<Toolbar
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-headerToolbar-sap_m_Toolbar3-1479393276099"
+													width="auto" design="Transparent" height="46px" visible="true" enabled="true">
+													<content>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-headerToolbar-sap_m_Toolbar3-1479393276099-content-sap_m_Text-1"
+															text="Items (3)" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+														<ToolbarSpacer
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-headerToolbar-sap_m_Toolbar3-1479393276099-content-sap_m_ToolbarSpacer-2"
+															width=""/>
+														<Button
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-headerToolbar-sap_m_Toolbar3-1479393276099-content-sap_m_Button-4"
+															iconDensityAware="false" text="" type="Transparent" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true"
+															press="_onButtonPress1"/>
+													</content>
+													<tooltip/>
+												</Toolbar>
+											</headerToolbar>
+											<columns>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1"
+													width="5%" hAlign="Center" vAlign="Middle" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1-header-sap_m_Text-1"
+															text="No" width="auto" maxLines="1" wrapping="false" textAlign="Center" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-2"
+													hAlign="Left" vAlign="Middle" minScreenWidth="Desktop" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-2-header-sap_m_Text-1"
+															text="Description" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-3"
+													width="20%" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-3-header-sap_m_Text-1"
+															text="Product Category" width="auto" maxLines="2" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479393730935"
+													width="10%" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479393730935-header-sap_m_Text-1"
+															text="Quantity" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479377483265"
+													width="10%" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479377483265-header-sap_m_Text-1"
+															text="Price" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+												<Column
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479378810518"
+													hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+													<header>
+														<Text
+															id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-columns-build_simple_Column-1479378810518-header-sap_m_Text-1"
+															text="Delivery Date" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+													</header>
+													<footer/>
+												</Column>
+											</columns>
+											<items>
+												<ColumnListItem
+													id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-3-subSections-sap_uxap_ObjectPageSubSection-1-blocks-sap_m_HBox-1479377260901-items-build_simple_Table-1479377382931-items-build_simple_Row-3"
+													type="Active">
+													<cells>
+														<ObjectNumber id="itemTab-1479378927669-content-sap_m_ObjectNumber-1479378939179" number="1" unit="" state="None"/>
+														<Input id="itemTab-1479378897798-content-sap_m_Input-1479378918740" value="" placeholder="Enter Description" type="Text"
+															showValueHelp="false" enabled="true" visible="true" valueHelpOnly="false" maxLength="0"/>
+														<Input id="itemTab-1479378899985-content-sap_m_Input-1479379073109" type="Text" showValueHelp="true" enabled="true" visible="true"
+															valueHelpOnly="false" maxLength="0"/>
+														<!--<StepInput id="itemTab-1479393730940-content-sap_m_Input-1479393805925" step="1" showValueHelp="false" min="1" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>-->
+														<Input value="1" step="1"/>
+														<Input id="itemTab-1479378902822-content-sap_m_Input-1479379079489" type="Text" enabled="true" visible="true" width="80.046875px"
+															valueHelpOnly="false" maxLength="0"/>
+														<DatePicker id="itemTab-1479379172050-content-sap_m_DatePicker-1479379196070" displayFormat="MMM dd, yyyy" enabled="true" visible="true"
+															width="auto"/>
+													</cells>
+												</ColumnListItem>
+											</items>
+										</Table>
+									</items>
+									<layoutData/>
+								</HBox>
+							</uxap:blocks>
+							<uxap:moreBlocks/>
+							<uxap:actions/>
+						</uxap:ObjectPageSubSection>
+					</uxap:subSections>
+					<uxap:customAnchorBarButton/>
+				</uxap:ObjectPageSection>
+				<!--             Attachment          -->
+				<uxap:ObjectPageSection id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-2" showTitle="true" title="Page Section Title"
+					titleUppercase="true" visible="true">
+					<uxap:subSections>
+						<uxap:ObjectPageSubSection id="attachmentDetailsSection" title="Attachments" mode="Collapsed">
+							<uxap:blocks>
+								<!--- CONTROLLER YET TO CODE TODO-->
+								<!--items={path : '/items', templateShareable : 'true'}-->
+								<!--<UploadCollection id="UploadCollection" maximumFilenameLength="35" maximumFileSize="10" showSeparators="All" change="onAttachmentChange" filenameLengthExceed="onFilenameLengthExceed" fileSizeExceed="onFileSizeExceed" uploadComplete="onUploadComplete" uploadTerminated="onUploadTerminated" items="ItemFemin1" numberOfAttachmentsText="Uploaded (1)" mode="SingleSelectMaster">-->
+								<!--	<toolbar>-->
+								<!--		<OverflowToolbar id="myId">-->
+								<!--			<Title id="attachmentTitle"/>-->
+								<!--			<ToolbarSpacer/>-->
+								<!--			<UploadCollectionToolbarPlaceholder/>-->
+								<!--		</OverflowToolbar>-->
+								<!--	</toolbar>-->
+								<!--	<items>-->
+								<!--		<UploadCollectionItem documentId="{documentId}" fileName="{fileName}dsadasd" mimeType="{mimeType}" thumbnailUrl="{thumbnailUrl}" url="{url}" enableEdit="false" visibleEdit="false" selected="{selected}">-->
+								<!--			<attributes>-->
+								<!--				<ObjectAttribute title="{title}" text="{path : 'text'}" active="{active}" press="onAttributePress"/>-->
+								<!--			</attributes>-->
+								<!--		</UploadCollectionItem>-->
+								<!--	</items>-->
+								<!--</UploadCollection>-->
+								<!---->
+								<Toolbar id="attachmentToolbar" width="auto" design="Transparent" height="46px" visible="true" enabled="true">
+									<Text id="attachmentText" text="Attachments" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+									<ToolbarSpacer id="attachmentSpace" width=""/>
+									<Button id="attachmentButton" iconDensityAware="false" text="" type="Transparent" icon="sap-icon://add" iconFirst="true" width="auto"
+										enabled="true" visible="true" press="_onButtonPressAttachment"/>
+								</Toolbar>
+							</uxap:blocks>
+							<uxap:moreBlocks/>
+							<uxap:actions/>
+						</uxap:ObjectPageSubSection>
+					</uxap:subSections>
+					<uxap:customAnchorBarButton/>
+				</uxap:ObjectPageSection>
+				<!--             Notes               -->
+				<uxap:ObjectPageSection id="sap_uxap_ObjectPageLayout_0-sections-sap_uxap_ObjectPageSection-1477140464948" showTitle="true"
+					title="Page Section Title" titleUppercase="true" visible="true">
+					<uxap:subSections>
+						<uxap:ObjectPageSubSection id="notesDetailsSection" title="Notes" mode="Collapsed">
+							<uxap:blocks>
+								<FeedInput post="onPost" icon="http://www.dmgdelta.co.uk/wp-content/uploads/survey-clipart-1.jpg"/>
+								<!--<List showSeparators="Inner" items="note1">-->
+								<!--	<FeedListItem sender="{Author}" icon="{AuthorPicUrl}" senderPress="onSenderPress" iconPress="onIconPress" iconDensityAware="false"/>-->
+								<!--</List>-->
+							</uxap:blocks>
+						</uxap:ObjectPageSubSection>
+					</uxap:subSections>
+				</uxap:ObjectPageSection>
+			</uxap:sections>
+		</uxap:ObjectPageLayout>
+		<footer>
+			<OverflowToolbar id="otbFooter">
+				<Button icon="sap-icon://message-popup" text="{/messagesLength}" type="Emphasized" press="handleMessagePopoverPress2"/>
+				<ToolbarSpacer/>
+				<Button type="Accept" text="Publish">
+					<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+				</Button>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
