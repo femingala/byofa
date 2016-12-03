@@ -1,0 +1,79 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.D2_1479394173532" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form">
+    <m:Dialog id="sap_m_Dialog_0" title="Add Item" horizontalScrolling="true" showHeader="true" state="None" stretch="false" type="Standard" verticalScrolling="true">
+        <m:content>
+            <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163807713-label-sap_m_Label-1480164008283" text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+            <form:Form id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659" visible="true">
+                <form:formContainers>
+                    <form:FormContainer id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1" visible="true">
+                        <form:formElements>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1" visible="true">
+                                <form:fields>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1-fields-sap_m_Label-1480162454074" text="Description" design="Standard" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1-fields-sap_m_Input-1480162454075" type="Text" showValueHelp="false" enabled="true" visible="true" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label/>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-2" visible="true">
+                                <form:fields>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-2-fields-sap_m_Label-1480162950657" text="Category" design="Standard" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-2-fields-sap_m_Input-1480163122426" type="Text" showValueHelp="true" enabled="true" visible="true" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label/>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-3" visible="true">
+                                <form:fields>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-3-fields-sap_m_Label-1480163412187" text="Quantity" design="Standard" width="20%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-3-fields-sap_m_Input-1480163419948" type="Number" showValueHelp="false" enabled="true" visible="true" width="20%" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label/>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-4" visible="true">
+                                <form:fields>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-4-fields-sap_m_Label-1480163645480" text="Unit" design="Standard" width="20%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-4-fields-sap_m_Input-1480163645481" type="Text" showValueHelp="true" enabled="true" visible="true" width="20%" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label/>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163807713" visible="true">
+                                <form:fields>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163807713-fields-sap_m_Input-1480163930156" type="Number" showValueHelp="false" enabled="true" visible="true" width="20%" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163807713-label-sap_m_Label-1480164049775" text="Price" design="Standard" width="20%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163810899" visible="true">
+                                <form:fields>
+                                    <m:Input id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163810899-fields-sap_m_Input-1480164109158" type="Text" showValueHelp="true" enabled="true" visible="true" width="20%" valueHelpOnly="false" maxLength="0"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163810899-label-sap_m_Label-1" text="Currency" design="Standard" width="20%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                            </form:FormElement>
+                            <form:FormElement id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163818610" visible="true">
+                                <form:fields>
+                                    <m:DatePicker id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163818610-fields-sap_m_DatePicker-1480165298857" displayFormat="MMM dd, yyyy" enabled="true" visible="true" width="auto"/>
+                                </form:fields>
+                                <form:label>
+                                    <m:Label id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-formContainers-sap_ui_layout_form_FormContainer-1-formElements-sap_ui_layout_form_FormElement-1480163818610-label-sap_m_Label-1" text="Delivery Date" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                </form:label>
+                            </form:FormElement>
+                        </form:formElements>
+                    </form:FormContainer>
+                </form:formContainers>
+                <form:layout>
+                    <form:ResponsiveGridLayout id="sap_m_Dialog_0-content-sap_ui_layout_form_Form-1480162357659-layout-sap_ui_layout_form_ResponsiveGridLayout-1" columnsM="2" columnsL="2" emptySpanL="0" emptySpanM="0" emptySpanS="0" visible="true" labelSpanS="12" labelSpanM="2" labelSpanL="4"/>
+                </form:layout>
+                <form:title/>
+            </form:Form>
+        </m:content>
+        <m:beginButton/>
+        <m:buttons>
+            <m:Button id="sap_m_Dialog_0-buttons-sap_m_Button-1" iconDensityAware="false" text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true"/>
+            <m:Button id="sap_m_Dialog_0-buttons-sap_m_Button-2" iconDensityAware="false" text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" press="_onButtonPress4"/>
+        </m:buttons>
+        <m:customHeader/>
+        <m:endButton/>
+        <m:subHeader/>
+    </m:Dialog>
+</mvc:View>
